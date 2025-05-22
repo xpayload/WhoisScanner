@@ -1,0 +1,37 @@
+{
+  "name": "whoisscan",
+  "version": "1.2.0",
+  "description": "Tool complet pentru scanarea domeniilor si IP-urilor - analiza DNS, porturi, SSL, subdomenii si multe altele",
+  "main": "main.js",
+  "scripts": {
+    "start": "node main.js",
+    "scan": "node main.js"
+  },
+  "keywords": [
+    "whois",
+    "scanner",
+    "security",
+    "dns",
+    "subdomain",
+    "port-scanner",
+    "ssl",
+    "web-analysis",
+    "reconnaissance",
+    "osint"
+  ],
+  "author": "Konorze",
+  "license": "MIT",
+  "repository": {
+    "type": "git",
+    "url": "https://github.com/Konorze/WhoisScanner.git"
+  },
+  "homepage": "https://github.com/Konorze/WhoisScanner",
+  "engines": {
+    "node": ">=14.0.0"
+  },
+  "dependencies": {},
+  "devDependencies": {},
+  "bin": {
+    "whoisscan": "./main.js"
+  }
+}
