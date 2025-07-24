@@ -759,13 +759,19 @@ class WhoisScanner {
                 console.log(`  STATUS: ${this.info.domain_info.status}`);
             }
         }
+
+        function getRecordsStr(records) {
+            if (!Array.isArray(records)) return JSON.stringify(records);
+            if (typeof records[0] === 'string') return records.join(', ');
+            if (records[0].exchange) return records.map((r) => r.exchange).join(', ');
+            return records.join(', ');
+        }
         
         if (Object.keys(this.info.dns_data).length > 0) {
             console.log(`\nINREGISTRARI DNS:`);
             Object.entries(this.info.dns_data).forEach(([type, records]) => {
                 if (records && records.length > 0) {
-                    const recordStr = Array.isArray(records) ? records.join(', ') : records;
-                    console.log(`  ${type}: ${recordStr}`);
+                    console.log(`  ${type}: ${getRecordsStr(records)}`);
                 }
             });
         }
