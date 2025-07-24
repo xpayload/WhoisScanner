@@ -23,7 +23,7 @@ WhoisScanner e un tool scris in Node.js care face analiza completa a unei tinte.
 Cloneaza repo-ul si porneste:
 
 ```bash
-git clone https://github.com/Konorze/WhoisScanner.git
+git clone https://github.com/xpayload/WhoisScanner.git
 cd WhoisScanner
 node main.js example.com
 ```
