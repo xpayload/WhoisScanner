@@ -113,7 +113,7 @@ MIT License - fa ce vrei cu el, dar mentine creditele.
 
 ---
 
-**Autor**: Konorze  
-**GitHub**: https://github.com/Konorze/WhoisScanner
+**Autor**: xpayload  
+**GitHub**: https://github.com/xpayload/WhoisScanner
 
 Daca toolul ti-a fost util, lasa un star! ⭐
